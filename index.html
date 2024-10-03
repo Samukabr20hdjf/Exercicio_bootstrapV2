@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameMania</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="config.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- header -->
+        <header class="header">
+            
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <h1>GameMania</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav navbar-nav nav-pills">
+
+                            <li class="nav-item"></li>
+                                <a href="#inicio" class="nav-link">Início</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="#nov-games" class="nav-link">Novidades dos games</a>
+                            </li>
+
+                            <li class="nav-item"></li>
+                                <a href="#lancamentos" class="nav-link">lançamentos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#login" class="nav-link">Para mais novidades cadastre-se</a>
+                            </li>
+                        </ul>  
+                    </nav>  
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Carousel -->
+        <div class="carousel slide carousel-fade" id="carousel-id" data-bs-ride="carousel">
+            <div class="carousael-inner" id="inicio">
+                <div class="carousel-item active" data-bs-interval="4500">
+                    <img class="d-block w-100" src="./img/gta.jpg">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4500">
+                    <img class="d-block w-100" src="./img/minecraft.jpg">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4500">
+                    <img class="d-block w-100" src="./img/eldenRing.jpg">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img class="d-block w-100" src="./img/forza.png">
+                </div>
+            </div>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+
+        <!-- Section -->
+            <section id="nov-games" class="section-nov">
+                <h2>Novidades dos Games</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="./img/696469.png">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>No man's Sky Atualização épica!!</h3>
+                        <p class="text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, minus. Recusandae doloribus vero iusto sequi voluptas deleniti illum consectetur ipsa in dolorem? Suscipit modi labore ipsum dignissimos exercitationem pariatur mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut ipsum veniam maiores fugit, atque sint odit iusto optio illum impedit praesentium aliquid quisquam, repudiandae quis quibusdam totam! Consequuntur, voluptates!
+                        </p>
+                        <button type="button" class="btn btn-link">Veja mais aqui!</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lancamentos">
+                <h2>Lançamentos</h2>
+                <div class="container">
+                    <div class="cards">
+                            <div class="card">
+                                <img src="./img/6qtkheei.png">
+                                <p class="descricao">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolor culpa odit aliquid nesciunt ab repellendus dicta perferendis dignissimos dolorum voluptates veniam, laudantium, error eum tempora quaerat, vero natus doloribus?
+                                </p>
+                            </div>
+    
+                            <div class="card">
+                                <img src="./img/mine.jpg">
+                                <p class="descricao">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolor culpa odit aliquid nesciunt ab repellendus dicta perferendis dignissimos dolorum voluptates veniam, laudantium, error eum tempora quaerat, vero natus doloribus?
+                                </p>
+                            </div>
+    
+                            <div class="card">
+                                <img src="./img/uye5oy6w.png">
+                                <p class="descricao">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolor culpa odit aliquid nesciunt ab repellendus dicta perferendis dignissimos dolorum voluptates veniam, laudantium, error eum tempora quaerat, vero natus doloribus?
+                                </p>
+                            </div>
+    
+                            <div class="card">
+                                <img src="./img/jxlich74.png">
+                                <p class="descricao">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolor culpa odit aliquid nesciunt ab repellendus dicta perferendis dignissimos dolorum voluptates veniam, laudantium, error eum tempora quaerat, vero natus doloribus?
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="login">
+                <h2>cadastre-se aqui!!</h2>
+                <div class="form-container">
+                    <form action="/submit" method="POST">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+            
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" id="sobrenome" name="sobrenome" required>
+            
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+            
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <h5>© Todos os direitos reservados - Samuel 2024</h5>
+        </footer>
+        
+        <script src="./lib/bootstrap.bundle.min.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Industry , sans-serif;
+}
+
+@media screen and (min-width: 767px){
+    
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    }
+    
+    @media screen and (min-width:1023px){
+        
+        .cards {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+    }
+

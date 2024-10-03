@@ -1,0 +1,137 @@
+body {
+    background-color:rgba(0, 0, 0, 0.918);
+}
+
+
+.navbar-nav .nav-link.active{
+    color: rgb(229, 255, 0);
+}
+
+.nav-link {
+    color:rgb(229, 255, 0);
+    text-align: center;
+}
+
+.nav-pills .nav-link.active,.nav-pills .show>.nav-link{
+    background-color: #2e2e2e;
+
+}
+
+header {
+    color: rgb(229, 255, 0);
+    background-color: rgba(19, 19, 19, .85);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header a:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+.carousel {
+    display: flex;
+    z-index: 0;
+}
+
+section {
+    background-color: #2c2c2cb6;
+    padding-top: 80px;
+    padding-bottom: 64px;
+    text-align: center;
+    border-bottom:2px solid #2929296d;
+    
+
+    && h2, h3 {
+        color: rgb(229, 255, 0);
+        text-align: center;
+        padding-bottom: 24px;
+    }
+}
+
+.section-nov img {
+    padding: 16px;
+    width: 100%;
+}
+
+.section-nov {
+    color: #fff;
+    text-align: center;
+    
+}
+
+.text {
+    max-width: 90%;
+    padding: 16px;
+}
+
+.cards {
+    width: 100;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #2b2b2bd6;
+    border: 1px solid #00000045;
+    color: #fff;
+}
+
+.card img {
+    width: 100%;
+    padding: 16px;
+}
+
+.descricao {
+    text-align: left;
+    padding: 8px;
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(229, 255, 0);
+}
+
+.form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #034312;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgb(229, 255, 0);
+}
+
+.form-container button:hover {
+    background-color: #034a14;
+    color: rgb(13, 255, 0);
+}
+
+footer {
+    color:rgb(229, 255, 0);
+    text-align: center;
+    padding: 64px;
+    background-color:rgba(0, 0, 0, 0);
+}
+
+
